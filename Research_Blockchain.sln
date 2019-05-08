@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Research_Blockchain", "Research_Blockchain\Research_Blockchain.vcxproj", "{08BC46D4-B1EA-4D07-846A-87DBB345D63B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08BC46D4-B1EA-4D07-846A-87DBB345D63B}.Debug|x64.ActiveCfg = Debug|x64
+		{08BC46D4-B1EA-4D07-846A-87DBB345D63B}.Debug|x64.Build.0 = Debug|x64
+		{08BC46D4-B1EA-4D07-846A-87DBB345D63B}.Debug|x86.ActiveCfg = Debug|Win32
+		{08BC46D4-B1EA-4D07-846A-87DBB345D63B}.Debug|x86.Build.0 = Debug|Win32
+		{08BC46D4-B1EA-4D07-846A-87DBB345D63B}.Release|x64.ActiveCfg = Release|x64
+		{08BC46D4-B1EA-4D07-846A-87DBB345D63B}.Release|x64.Build.0 = Release|x64
+		{08BC46D4-B1EA-4D07-846A-87DBB345D63B}.Release|x86.ActiveCfg = Release|Win32
+		{08BC46D4-B1EA-4D07-846A-87DBB345D63B}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C460D31-CD00-4F7F-AE8B-B5C20818269F}
+	EndGlobalSection
+EndGlobal
