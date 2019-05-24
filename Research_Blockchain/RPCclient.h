@@ -110,7 +110,7 @@ public:
 	// FullName:  MyRPCclient::show_data
 	// Access:    public 
 	// Returns:   int
-	// DO:        打印查看接受的数据情况
+	// DO:        打印查看接受的数据情况（命令行才可用）
 	//************************************
 	int print_data();
 
@@ -118,7 +118,7 @@ public:
 	// Method:    get_data
 	// FullName:  MyRPCclient::get_data
 	// Access:    public 
-	// Returns:   std::string
+	// Returns:   std::string 数据
 	// DO:        获取接受到的数据
 	//************************************
 	std::string get_data();

@@ -97,7 +97,7 @@ int Bitcoin::block_into_db()
 		+ data["version"].toStyledString() + ","\
 		+ data["weight"].toStyledString()\
 		+ ")";
-	//LOG(DEBUG1, sql_block);
+	LOG(DEBUG1, sql_block);
 	database->DBquery(sql_block);
 
 	for (int i = 0; i < data["nTx"].asInt(); i++)
@@ -148,7 +148,7 @@ int Bitcoin::block_into_db()
 					+ vin["txid"].toStyledString() + "," \
 					+ vin["vout"].toStyledString() \
 					+ ")";
-				//LOG(DEBUG1, sql_vin);
+				LOG(DEBUG1, sql_vin);
 				database->DBquery(sql_vin);
 			}
 		}
@@ -166,7 +166,7 @@ int Bitcoin::block_into_db()
 				+ vout["scriptPubKey"]["addresses"][num].toStyledString() + "," \
 				+ vout["scriptPubKey"]["type"].toStyledString() + "," \
 				+ vout["value"].toStyledString()+ ")";
-			//LOG(DEBUG1, sql_vout);
+			LOG(DEBUG1, sql_vout);
 			database->DBquery(sql_vout);
 		}
 		

@@ -8,13 +8,14 @@ std::ofstream Logger::m_log_file;
 
 
 void initLogger() {
+	//以当天的日期为文件名打开一个日记文件
 	time_t tm;
 	time(&tm);
 	struct tm tm_now;
 	localtime_s(&tm_now ,&tm);
 	char log_file[32];
 	sprintf_s(log_file,"../logs/%d-%d-%d.log",tm_now.tm_year + 1900, tm_now.tm_mon + 1, tm_now.tm_mday);
-	//std::cout << log_file;
+
 	Logger::m_log_file.open(log_file,std::ios::app);
 }
 

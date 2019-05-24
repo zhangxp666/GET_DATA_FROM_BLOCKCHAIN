@@ -26,7 +26,7 @@
 
  //日志等级类型
 typedef enum log_rank {
-	DEBUG1,//打印所有调试信息，之所以设置DEBUG1是因为DEBUG被框架用了
+	DEBUG1,//打印所有调试信息(数据量很大)，之所以设置DEBUG1是因为DEBUG被框架用了
 	INFO,//正常运行的程序应该通知的信息
 	WARN,//警告信息,程序出现的错误信息，但可以继续执行
 	FATAL//程序无法执行，立刻退出
@@ -34,7 +34,7 @@ typedef enum log_rank {
 
 
 
-#define DEFINE_LOG_RANK DEBUG1 //设定全局默认的日记等级，低于设定等级的信息不会被打印
+#define DEFINE_LOG_RANK INFO //设定全局默认的日记等级，低于设定等级的信息不会被打印
 
 
 //************************************

@@ -80,7 +80,7 @@ int Ethereum::block_into_db()
 		+ data["nonce"].toStyledString() + ","\
 		+ data["sha3Uncles"].toStyledString()\
 		+ ")";
-	//LOG(DEBUG1, sql_block);
+	LOG(DEBUG1, sql_block);
 	database->DBquery(sql_block);
 
 	for (int i = 0; i < data["transactions"].size(); i++)
@@ -104,7 +104,7 @@ int Ethereum::block_into_db()
 			+ hex_string_to_intstring(tx["value"].asString())  \
 
 			+ ")";
-		//LOG(DEBUG1, sql_tx);
+		LOG(DEBUG1, sql_tx);
 		database->DBquery(sql_tx);
 
 	}
@@ -124,7 +124,7 @@ int Ethereum::get_block_num()
 
 int Ethereum::get_block_num_in_db()
 {
-	std::string sql = "select Height from block where Blockname = \"" + name + "\" order by height desc LIMIT 1";
+	std::string sql = "select Number from eth_block where  order by Number desc LIMIT 1";
 	char num[1][RESULT_SIZE];
 	int hang, lie;//参数需要，实际并无需，因为已经知道之获取一个数就行了
 	database->DBquery_get(sql, num, hang, lie);

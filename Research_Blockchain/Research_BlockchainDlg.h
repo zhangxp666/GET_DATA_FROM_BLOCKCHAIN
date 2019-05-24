@@ -44,4 +44,22 @@ public:
 	afx_msg void OnBnClickedOk();
 	afx_msg void OnBnClickedRadio4();
 	CString show_str;
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
+
+	CWinThread* m_pThread;
+
+	//************************************
+	// Method:    ThreadFunction
+	// FullName:  CResearchBlockchainDlg::ThreadFunction
+	// Access:    public static 
+	// Returns:   UINT
+	// Parameter: LPVOID pParam  对话框的指针
+	// DO:        这是程序的执行线程函数，从界面获取参数之后在这个线程里执行
+	//************************************
+	static UINT ThreadFunction(LPVOID pParam);
+
+	//一些程序必备的参数
+	int blockchian_id;
+	int start;
+	int end;
 };

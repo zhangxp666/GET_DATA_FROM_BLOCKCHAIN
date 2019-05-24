@@ -19,6 +19,7 @@
 #define MAX_CONFIG_SIZE 64  //配置信息的字节长度
 #define FILE_FOR_CONFIG "../config.ini"//默认配置文件
 
+//命令行下使用的代码
 #define BIT 1//比特币
 #define ETH 2//以太坊
 
